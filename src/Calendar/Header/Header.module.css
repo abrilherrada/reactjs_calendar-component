@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .moveButton {
+    font-size: 1.5rem;
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: white;
+    color: hsl(240, 50%, 50%);
+    cursor: pointer;
+ }

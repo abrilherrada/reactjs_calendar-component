@@ -1,0 +1,52 @@
+.body {
+    margin: 10px 0px;
+}
+
+.cellsContainer, .daysContainer {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.monthsContainer, .yearsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+.cell, .day, .month, .year {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.day {
+    font-weight: bold;
+}
+
+.cell, .month, .year {
+    background-color: hsl(0, 0%, 90%);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.month:hover, .year:hover {
+    background-color: hsl(240, 50%, 50%);
+    color: hsl(0, 0%, 100%);
+}
+
+.emptyCell {
+    background-color: hsl(0, 0%, 100%);
+    cursor: default;
+}
+
+.selectedCell {
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: hsl(240, 50%, 50%);
+    color: hsl(0, 0%, 100%);
+}
